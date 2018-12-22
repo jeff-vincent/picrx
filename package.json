@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jeff-vincent/picrx#readme",
   "dependencies": {
+    "caman": "^4.1.2",
     "express": "^4.16.4"
   }
 }
