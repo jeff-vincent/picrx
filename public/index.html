@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>PicRx</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body class="black">
+  
+  <nav class="navbar navbar-dark bg-info mb-5">
+    <div class="container">
+      <a href="#" class="navbar-brand title">PicRx</a>
+    </div>
+    <button class="btn btn-outline-warning">More</button>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div style="height: 40px" class="margin-bottom-5 margin-left-5">
+        <p class="label">Workspace</p>
+      </div>
+    </div>
+  <div class="row">
+    
+    <!-------------- Canvas ------------------->
+
+    <canvas id="image" class="margin-left-15 margin-bottom-15">
+    </canvas>
+    <div class="margin-top-5"></div>
+
+    <!----------------spacer-------------->
+    <div class="col-sm-2" style="height:50px;"></div>
+    
+    <!----------------Control Panel-------------->
+      <div class="col-sm-5 margin-bottom-15">
+        <div class="upload-btn-wrapper">
+          <button id="upload" class="btn btn-outline-info margin-top-15 margin-bottom-15"> Upload Image </button>
+          <input type="file" id="fileInput" onchange="handleImage(event)" ;></input>
+               
+          <div>
+          <h3 class="warning-label ">
+            Resize
+          </h3>
+          <input type="range" min="60" max="100" value="100" class="slider rounded-corners" onchange="resizeImage(this.value)">
+        </div>
+    </div>
+
+<!--         <div class="margin-top-5">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                Add Text
+              </span>
+            </div>
+            <input type="text" class="form-control" aria-label="textarea" aria-describedby="basic-addon1">
+          </div>
+        </div> -->
+        <div id="slidecontainer">
+          <h3 class="label">
+            Brightness
+          </h3>
+          <input id="brightness" type="range" min="-10" max="10" value="0" class="rounded-corners slider" onchange="applyFilters()">
+        </div>
+        <div id="slidecontainer">
+          <h3 class="label">
+            Contrast
+          </h3>
+          <input id="contrast" type="range" min="-10" max="10" value="0" class="slider rounded-corners" onchange="applyFilters()">
+        </div>
+        <div id="slidecontainer">
+          <h3 class="label">
+            Saturation
+          </h3>
+          <input id="saturation" type="range" min="-10" max="10" value="0" class="slider rounded-corners" onchange="applyFilters()">
+        </div>
+           <button class="btn btn-outline-secondary margin-top-15 margin-bottom-15 drop-shadow" id="downloadBtn" onclick="rotateImage()">
+            Rotate 90°
+        </button>
+       <button class="btn btn-outline-secondary margin-top-15 margin-bottom-15 drop-shadow" id="downloadBtn" onclick="startCropper(canvas)">
+            Crop
+        </button>
+          <button class="btn btn-outline-secondary margin-top-15 margin-bottom-15 drop-shadow" id="downloadBtn" onclick="downloadClick(event)">
+            Download Image
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>

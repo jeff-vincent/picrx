@@ -1,0 +1,22 @@
+{
+  "name": "picrx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeff-vincent/picrx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeff-vincent/picrx/issues"
+  },
+  "homepage": "https://github.com/jeff-vincent/picrx#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
