@@ -30,28 +30,26 @@
   </div>
   <div class="container">
     <div class="row">
-      <div style="height: 40px" class="margin-bottom-5 margin-left-5">
+      <div style="height: 40px" class="mb-3 ml-3">
         <p class="label">Workspace</p>
       </div>
     </div>
   <div class="row">
 
-    <canvas id="image" class="margin-left-15 margin-bottom-15">
+    <canvas id="image" class="ml-3 mb-3">
     </canvas>
-    <div class="margin-top-5"></div>
+    <div class="mt-1"></div>
 
     <div class="col-sm-2" style="height:50px;"></div>
-    
       <div class="col-sm-5 margin-bottom-15">
         <div class="upload-btn-wrapper">
-          <button id="upload" class="btn btn-outline-info margin-top-15 margin-bottom-15"> Upload Image </button>
+          <button id="upload" class="btn btn-outline-info mt-3 mb-3"> Upload Image </button>
           <input type="file" id="fileInput" onchange="handleImage(event)" ;></input>
-               
           <div>
-          <h3 class="warning-label ">
-            Resize
-          </h3>
-          <input type="range" min="60" max="100" value="100" class="slider rounded-corners" onchange="resizeImage(this.value)">
+            <h3 class="warning-label ">
+                Resize
+            </h3>
+            <input type="range" min="60" max="100" value="100" class="slider rounded-corners" onchange="resizeImage(this.value)">
         </div>
     </div>
 
@@ -73,13 +71,13 @@
           </h3>
           <input id="saturation" type="range" min="-10" max="10" value="0" class="slider rounded-corners" onchange="applyFilters()">
         </div>
-           <button class="btn btn-outline-secondary margin-top-15 margin-bottom-15 drop-shadow" id="downloadBtn" onclick="rotateImage()">
+           <button class="btn btn-outline-secondary mt-3 mb-3" id="downloadBtn" onclick="rotateImage()">
             Rotate 90°
         </button>
-       <button class="btn btn-outline-secondary margin-top-15 margin-bottom-15 drop-shadow" id="downloadBtn" onclick="startCropper(canvas)">
+       <button class="btn btn-outline-secondary mt-3 mb-3" id="downloadBtn" onclick="startCropper(canvas)">
             Crop
         </button>
-          <button class="btn btn-outline-secondary margin-top-15 margin-bottom-15 drop-shadow" id="downloadBtn" onclick="downloadClick(event)">
+          <button class="btn btn-outline-secondary mt-3 mb-3" id="downloadBtn" onclick="downloadClick(event)">
             Download Image
         </button>
       </div>

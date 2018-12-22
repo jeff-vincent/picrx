@@ -52,24 +52,6 @@
   background-color: transparent;
 }
 
-.margin-bottom-5 {
-  margin-bottom:5px;
-}
-.margin-bottom-15 {
-  margin-bottom:15px;
-}
-
-.margin-left-5 {
-  margin-left:5px;
-}
-
-.margin-left-15 {
-  margin-left:15px;
-}
-.margin-top-5 {
-  margin-top:5px;
-}
-
 .upload-btn-wrapper {
   position: relative;
   overflow: hidden;
@@ -83,11 +65,6 @@
   top: 0;
   opacity: 0;
 }
-
-.margin-15{
-  margin:15px;
-}
-
 
 .black {
   background-color: black;
@@ -103,10 +80,6 @@
   overflow: hidden;
 }
 
-.neg-bottom-padding {
-  
-}
-
 #image {
   border-style:solid;
   border-radius:5px;
@@ -118,13 +91,6 @@
   margin-top:15px;
 }
 
-.margin-top-15 {
-  margin-top:15px;
-}
-
-.margin-right-15 {
-  margin-right: 15px;
-}
 .warning-label {
   display: inline-block;
   height: 38px;
@@ -139,10 +105,6 @@
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-}
-
-.margin-left-100 {
-  margin-left: 100px;
 }
 
 .dropdown {
