@@ -1,5 +1,3 @@
-import Caman from 'caman';
-
 const canvas = document.getElementById('image');
 const downloadBtn = document.getElementById('downloadBtn');
 const context = canvas.getContext("2d");
