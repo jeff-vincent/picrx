@@ -88,9 +88,6 @@
   margin:15px;
 }
 
-.drop-shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 .black {
   background-color: black;
@@ -149,7 +146,10 @@
 }
 
 .dropdown {
-  color: #e8de29;
+  color: #030303;
+  height: 200px;
+  width: 85%;
+  background-color: #c0c2d1;
 }
 
 .hide {

@@ -3,8 +3,8 @@ const downloadBtn = document.getElementById('downloadBtn');
 const context = canvas.getContext("2d");
 
 function startCropper(canvas) {
+//   canvas.classList.add('hide');
   const cropper = new Cropper(canvas)
-  canvas.className('hide')
 };  
   
 function downloadClick(event) {
@@ -78,10 +78,6 @@ function resizeImage(percent) {
   });
 }
 
-function openMenu() {
-  
-};
-
 function rotateImage() {
     Caman("#image", function () {
     this.revert(false);
@@ -89,3 +85,9 @@ function rotateImage() {
     .render()
   });
 };
+
+const filtersBtn = document.getElementById('filtersBtn');
+filtersBtn.addEventListener('click', function() {
+    const dropdown = document.getElementById('dropdown');
+    dropdown.classList.toggle('hide');
+})

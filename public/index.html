@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica&effect=shadow-multiple">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.4.3/cropper.min.js"></script>
+
 </head>
 
 <body class="black">
@@ -16,8 +18,16 @@
     <div class="container">
       <a href="#" class="navbar-brand title">PicRx</a>
     </div>
-    <button class="btn btn-outline-warning">More</button>
+    <button id="filtersBtn" class="btn btn-outline-warning" >Filters</button>
   </nav>
+  <div id="dropdown" class="hide container">
+      <div class="row">
+          <div class="dropdown rounded-corners">
+             This will be the filter selection panel.
+          </div>
+          
+      </div>
+  </div>
   <div class="container">
     <div class="row">
       <div style="height: 40px" class="margin-bottom-5 margin-left-5">
@@ -25,7 +35,6 @@
       </div>
     </div>
   <div class="row">
-    
 
     <canvas id="image" class="margin-left-15 margin-bottom-15">
     </canvas>
