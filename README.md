@@ -7,7 +7,7 @@ Simple image editor -- Node - Camanjs - HTML5 canvas
 
 Clone the repo:
 ```bash
-git clone
+git clone https://github.com/jeff-vincent/picrx.git
 ```
 Install:
 ```bash
